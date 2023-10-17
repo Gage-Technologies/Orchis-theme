@@ -238,7 +238,7 @@ install_package() {
     if has_command zypper; then
       sudo zypper in sassc
     elif has_command apt-get; then
-      sudo apt-get install sassc
+      sudo apt-get -y install sassc
     elif has_command dnf; then
       sudo dnf install sassc
     elif has_command pacman; then
